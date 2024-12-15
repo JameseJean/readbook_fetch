@@ -8,8 +8,8 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # 配置信息
-EXCEL_PATH = "path/to/your/excel.xlsx"  # 替换为实际的Excel文件路径
-OUTPUT_PATH = "path/to/output/excel.xlsx"  # 替换为输出文件路径
+EXCEL_PATH = "./input_data_xlsx/12月航海小红书演示数据使用.xlsx"  # 替换为实际的Excel文件路径
+OUTPUT_PATH = "./output_data_xlsx/12月航海小红书演示数据使用output.xlsx"  # 替换为输出文件路径
 
 # 请求头配置
 HEADERS = {

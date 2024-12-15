@@ -34,20 +34,36 @@ pip install pandas requests beautifulsoup4 openpyxl
 
 ## 使用说明
 
-1. 配置文件路径
+1. 获取Cookie
+   - 获取小红书Cookie步骤：
+     - 使用Chrome浏览器打开小红书网页版(https://www.xiaohongshu.com)
+     - 登录您的小红书账号
+     - 按F12打开开发者工具(Mac用户按Command+Option+I)
+     - 切换到"Network"(网络)标签页
+     - 刷新页面
+     - 在Network面板中找到www.xiaohongshu.com的请求
+     - 在右侧Headers(标头)中找到"Request Headers"(请求标头)
+     - 找到"Cookie"字段并复制完整内容
+   - Cookie使用注意事项：
+     - Cookie通常包含多个键值对，需要完整复制
+     - Cookie有效期通常为几天到几周不等
+     - 如遇到请求失败，请及时更新Cookie
+     - 建议定期检查Cookie有效性
+
+2. 配置文件路径
    - 打开 `xiaohongshu_processor.py`
    - 修改 `EXCEL_PATH` 为输入Excel文件的路径
    - 修改 `OUTPUT_PATH` 为输出Excel文件的路径
 
-2. 配置请求头
+3. 配置请求头
    - 在 `HEADERS` 中填入有效的Cookie
    - 根据需要修改User-Agent
 
-3. 准备输入文件
+4. 准备输入文件
    - Excel文件第一行为标题
    - 第一列为小红书笔记URL
 
-4. 运行程序
+5. 运行程序
 ```bash
 python xiaohongshu_processor.py
 ```
