@@ -14,7 +14,7 @@ OUTPUT_PATH = "./output_data_xlsx/12月航海小红书演示数据使用output.x
 # 请求头配置
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-    "Cookie": "your_cookie_here"  # 替换为实际的Cookie
+    "Cookie": "YOUR_COOKIE_HERE"  # 请替换为你的Cookie
 }
 
 def read_excel():
